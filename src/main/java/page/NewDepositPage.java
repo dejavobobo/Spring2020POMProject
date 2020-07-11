@@ -1,12 +1,13 @@
 package page;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
 
-public class NewDepositPage {
+public class NewDepositPage extends BasePage{
 	
 WebDriver driver;
 	
@@ -37,7 +38,9 @@ WebDriver driver;
 	}
 	
 	public void clickNewDepositButton() {
+		BasePage.waitForElement(driver, 3, By.xpath("//*[@id=\"account\"]"));
 		NEW_DEPOSIT_BUTTON.click();
+		
 	}
 	
 	public void selectFromDropdown() {

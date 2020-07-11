@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.testng.Assert;
 
-public class DashBoardPage {
+public class DashBoardPage extends BasePage{
 	
 	WebDriver driver;
 	
